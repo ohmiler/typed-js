@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Effect</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>MilerDev</h1>
+                </div>
+
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-wrapper">
+                <div class="header-info">
+                    <h1>Hi, I'm <span id="type">Patiphan</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, estNobis, estNobis, estNobis, est.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        var typed = new Typed('#type', {
+        // Waits 1000ms after typing "First"
+        strings: ['Patiphan', 'Creator', 'Instructor', 'Developer', 'Entrepreneur'],
+        smartBackspace: true,
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 100,
+        fadeOut: true,
+        });
+    </script>
+
+</body>
+</html>
